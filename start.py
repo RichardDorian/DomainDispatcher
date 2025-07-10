@@ -41,7 +41,7 @@ for domain in config:
 
   append("location / {", 1)
   append("proxy_pass " + domain["target"] + "$request_uri;", 2)
-  # append("proxy_redirect default;", 2)
+  append("proxy_redirect " + domain["target"] + " /;", 2)
   append("proxy_set_header Host $host;", 2)
   append(f"proxy_set_header X-Real-IP ${xRealIp};", 2)
   append(f"proxy_set_header X-Forwarded-For ${xForwardedFor};", 2)
