@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This repository is now archived as I now use [Nginx Proxy Manager](https://nginxproxymanager.com/) for my homelab.
+
 # DomainDispatcher
 
 Web server redirecting traffic based server name
